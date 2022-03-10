@@ -1,10 +1,11 @@
+const path = require('path')
 exports.config = {
     //
     // ====================
     // Runner Configuration
     // ====================
     //
-    port: 4723,
+    port: 4724,
     //
     // ==================
     // Specify Test Files
@@ -55,14 +56,19 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        //maxInstances: 5,
         //
-        browserName: 'chrome',
-        acceptInsecureCerts: true
+        //browserName: 'chrome',
+        //acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
+        platformName: "Android",
+        "appium:platformVersion":"11",
+        "appium:deviceName": "Pixel 4",
+        "appium:automationName": "UIAutomator2",
+        "appium:app": path.join(process.cwd(),"./app/android/ApiDemos-debug.apk"),
     }],
     //
     // ===================

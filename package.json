@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/shahlep/webdriverio-appium#readme",
   "dependencies": {
-    "@wdio/cli": "^7.17.4"
+    "@wdio/cli": "^7.17.4",
+    "appium": "^2.0.0-beta.25"
   },
   "devDependencies": {
     "@wdio/appium-service": "^7.17.3",
