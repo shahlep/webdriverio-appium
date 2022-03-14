@@ -64,11 +64,16 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-        platformName: "Android",
-        "appium:platformVersion":"11",
-        "appium:deviceName": "Pixel 4",
-        "appium:automationName": "UIAutomator2",
-        "appium:app": path.join(process.cwd(),"./app/android/ApiDemos-debug.apk"),
+        //platformName: "Android",
+        //"appium:platformVersion":"11",
+        //"appium:deviceName": "Pixel 4",
+        //"appium:automationName": "UIAutomator2",
+        //"appium:app": path.join(process.cwd(),"./app/android/ApiDemos-debug.apk"),
+        platformName: "ios",
+        "appium:platformVersion":"15.2",
+        "appium:deviceName": "iPhone 12 Pro",
+        "appium:automationName": "XCUITest",
+        "appium:app": path.join(process.cwd(),"./app/ios/UIKitCatalog.app"),
     }],
     //
     // ===================
